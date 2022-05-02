@@ -10,5 +10,4 @@
  - 저희는 c와 visual studio code 를 통해 개발합니다. 
 ## 팀 소개 및 역할 분담
  - 저희팀은 21800579 이준명, 21800381 소병찬 으로 구성 되어있으며,
- > 이준명은 CRUD 및 Data save/load
- > 소병찬은 여러 search option들을 
+ > 이준명은 CRUD 및 Data save/load, 소병찬은 여러 search option들을 맡았습니다. 
