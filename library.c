@@ -27,12 +27,6 @@ int main(){
 			printf("=>추가됨!\n");
 		}
 		else if(menu == 3){
-			int num = selectBook(s,index);
-			if(num == 0){
-				printf("=>취소됨!\n");
-			}
-			else{
-			}
 		}
 		else if(menu == 4){
 		}
