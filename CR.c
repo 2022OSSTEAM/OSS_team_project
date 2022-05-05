@@ -37,14 +37,14 @@ void listBook(Book *s, int count){
 int selectMenu(){
     int menu;
     printf("\n**********\n");
-    printf("1. ì±… ì¡°íšŒ\n");
-    printf("2. ì±… ì¶”ê°€\n");
-    printf("3. ì±… ìˆ˜ì •\n");
-    printf("4. ì±… ì‚­ì œ\n");
-    printf("5. ì €ìž¥\n");
-    printf("6. ê²€ìƒ‰\n");
-    printf("0. ì¢…ë£Œ\n\n");
-    printf("=> ì›í•˜ëŠ” ë©”ë‰´ë¥¼ ìž…ë ¥í•˜ì„¸ìš”-> ");
+    printf("1. Ã¥ Á¶È¸\n");
+    printf("2. Ã¥ Ãß°¡\n");
+    printf("3. Ã¥ ¼öÁ¤\n");
+    printf("4. Ã¥ »èÁ¦\n");
+    printf("5. ÀúÀå\n");
+    printf("6. °Ë»ö\n");
+    printf("0. Á¾·á\n\n");
+    printf("=> ¿øÇÏ´Â ¸Þ´º¸¦ ÀÔ·ÂÇÏ¼¼¿ä-> ");
     scanf("%d", &menu);
     getchar();
     return menu;
