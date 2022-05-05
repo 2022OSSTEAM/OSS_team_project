@@ -1,4 +1,4 @@
-#include "CR.H"
+#include "CR.h"
 
 int addBook(Book *s){
 	printf("author name? ");
