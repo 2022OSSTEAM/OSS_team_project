@@ -2,7 +2,7 @@
 
 int updateBook(Book *s){
 	printf("author name? ");
-	fgets(s->author,100,stdin);
+	fgets(s->author,i100,stdin);
 	s->author[strlen(s->author)-1] = '\0';
 	
 	printf("title? ");
@@ -36,5 +36,6 @@ int selectDataNo(Book *s, int count){
     listBook(s, count);
     printf("Number? (cancel: 0)? ");
     scanf("%d", &no);
+	getchar();
     return no;
 }
