@@ -1,9 +1,10 @@
-#include "CR.h"
+#include "UD.h"
 
 int main(){
 	Book s[100];
-	int count =0, index=0, menu;
+	int count =0, index=0, menu, no;
 	FILE *fp;
+	
 
 	/*fp = fopen("book.txt","r");
 	if(fp != NULL){
@@ -23,11 +24,31 @@ int main(){
 		}
 		else if(menu == 2){
 			count += addBook(&s[index++]);
-			printf("=>Ï∂îÍ∞ÄÎê®!\n");
+			printf("=>√ﬂ∞°µ !\n");
 		}
 		else if(menu == 3){
+			no = selectDataNo(s, index);
+                if(no==0){
+                    printf("√Îº“µ !\n");
+                    continue;
+                }
+
+                updateBook(&s[no-1]);
+
 		}
 		else if(menu == 4){
+			no = selectDataNo(s, index);
+                if(no==0){
+                    printf("√Îº“µ !\n");
+                    continue;
+                }
+            int deleteok;
+            printf("¡§∏ª∑Œ ªË¡¶«œΩ√∞⁄Ω¿¥œ±Ó?(ªË¡¶:1)");
+            scanf("%d", &deleteok);
+            if(deleteok==1){
+                if(deleteBook(&s[no-1])) count--;
+            }
+
 		}
 		else if(menu == 5){
 
