@@ -27,7 +27,7 @@ void listBook(Book *s, int count){
 	printf("Author Title Category ID status\n");
 
 	for(int i=0; i<count; i++){
-			if(s->id != 0){
+			if(s[i].id > 0){
 				printf("%2d ",i+1);
 				printf("%s %s %s %d %d\n",s[i].author,s[i].title,s[i].category,s[i].id,s[i].status);
 			}
