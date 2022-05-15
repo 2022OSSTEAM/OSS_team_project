@@ -9,7 +9,6 @@ int main(){
 
 	fp = fopen("book.txt","r");
 	if(fp != NULL){
-		printf("zzzzzzz");
 		count = loadData(s,fp);
 		index = count;
 	}
