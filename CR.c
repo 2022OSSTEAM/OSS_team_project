@@ -37,14 +37,14 @@ void listBook(Book *s, int count){
 int selectMenu(){
     int menu;
     printf("\n**********\n");
-    printf("1. 책 조회\n");
-    printf("2. 책 추가\n");
-    printf("3. 책 수정\n");
-    printf("4. 책 삭제\n");
-    printf("5. 저장\n");
-    printf("6. 검색\n");
-    printf("0. 종료\n\n");
-    printf("=> 원하는 메뉴를 입력하세요-> ");
+    printf("1. List books\n");
+    printf("2. Add book\n");
+    printf("3. Update book\n");
+    printf("4. Delete book\n");
+    printf("5. Save\n");
+    printf("6. Search\n");
+    printf("0. Terminate\n\n");
+    printf("=> Select Menu : ");
     scanf("%d", &menu);
     getchar();
     return menu;

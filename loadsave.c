@@ -2,7 +2,6 @@
 void saveData(Book *s, int count){
 	FILE *fp;
 	fp = fopen("book.txt","w");
-	printf("%d",count);
 	for(int i=0; i<count; i++){
 		if(s[i].id > 0){
 			if(i != count-1){
@@ -20,7 +19,7 @@ void saveData(Book *s, int count){
 		}
 	}
 	fclose(fp);
-	printf("=>저장 성공\n");
+	printf("=>save book data!\n");
 	return;
 }
 
@@ -37,6 +36,6 @@ int loadData(Book *s, FILE *fp){
 		i++;
 	}
 	fclose(fp);
-	printf("=>로딩 성공\n");
+	printf("=>load book data!\n");
 	return i;
 }

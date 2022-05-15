@@ -25,12 +25,12 @@ int main(){
 		}
 		else if(menu == 2){
 			count += addBook(&s[index++]);
-			printf("=>추가됨!\n");
+			printf("=>added!\n");
 		}
 		else if(menu == 3){
 			no = selectDataNo(s, index);
                 if(no==0){
-                    printf("취소됨!\n");
+                    printf("canceled!!\n");
                     continue;
                 }
 
@@ -40,11 +40,11 @@ int main(){
 		else if(menu == 4){
 			no = selectDataNo(s, index);
                 if(no==0){
-                    printf("취소됨!\n");
+                    printf("canceled!!\n");
                     continue;
                 }
             int deleteok;
-            printf("정말로 삭제하시겠습니까?(삭제:1)");
+            printf("(really want to delete it? :1) ");
             scanf("%d", &deleteok);
             if(deleteok==1){
                 if(deleteBook(&s[no-1])) count--;
