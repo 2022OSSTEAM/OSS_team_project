@@ -1,7 +1,7 @@
-#include <stdio.h>
-#include <string.h>
 #ifndef HEADER
 #define HEADER
+#include <stdio.h>
+#include <string.h>
 typedef struct{
 	char author[100];
 	char title[100];

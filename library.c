@@ -1,4 +1,5 @@
 #include "UD.h"
+#include "loadsave.h"
 
 int main(){
 	Book s[100];
@@ -6,14 +7,15 @@ int main(){
 	FILE *fp;
 	
 
-	/*fp = fopen("book.txt","r");
+	fp = fopen("book.txt","r");
 	if(fp != NULL){
+		printf("zzzzzzz");
 		count = loadData(s,fp);
 		index = count;
 	}
 	else{
 		fprintf(stderr,"=> no such file!\n");
-	}*/
+	}
 	while(1){
 		
 		menu = selectMenu();
@@ -51,7 +53,7 @@ int main(){
 
 		}
 		else if(menu == 5){
-
+			saveData(s,index);
 		}
 	}
 	
