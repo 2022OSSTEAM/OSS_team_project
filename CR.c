@@ -42,7 +42,10 @@ int selectMenu(){
     printf("3. Update book\n");
     printf("4. Delete book\n");
     printf("5. Save\n");
-    printf("6. Search\n");
+    printf("6. Search Title\n");
+	printf("7. Search Author\n");
+	printf("8. Search Id\n");
+	printf("9. A list of available books\n");
     printf("0. Terminate\n\n");
     printf("=> Select Menu : ");
     scanf("%d", &menu);

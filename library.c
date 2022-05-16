@@ -1,5 +1,6 @@
 #include "UD.h"
 #include "loadsave.h"
+#include "search.h"
 
 int main(){
 	Book s[100];
@@ -53,6 +54,18 @@ int main(){
 		}
 		else if(menu == 5){
 			saveData(s,index);
+		}
+		else if(menu == 6){
+			searchTitle(s,index);
+		}
+		else if(menu == 7){
+			searchAuthor(s,index);
+		}
+		else if(menu == 8){
+			searchId(s,index);
+		}
+		else if(menu == 9){
+			searchAble(s,index);
 		}
 	}
 	
